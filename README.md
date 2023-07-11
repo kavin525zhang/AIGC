@@ -5,4 +5,7 @@
 * [FastChat](https://github.com/lm-sys/FastChat)
 * [DeepSpeed-chat](https://github.com/microsoft/DeepSpeedExamples/tree/master/applications/DeepSpeed-Chat)
 # AIGC
-demo https://huggingface.co/spaces/stabilityai/stable-diffusion
+* [demo](https://huggingface.co/spaces/stabilityai/stable-diffusion)
+# 句子表征
+* [腾讯词向量](./sentence_emb/tencent_emb.py)
+
