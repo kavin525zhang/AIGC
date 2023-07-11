@@ -8,4 +8,9 @@
 * [demo](https://huggingface.co/spaces/stabilityai/stable-diffusion)
 # 句子表征
 * [腾讯词向量](./sentence_emb/tencent_emb.py)
+* [GPT接口](./sentence_emb/gpt_emb.py)
+* [HuggingFace接口](./sentence_emb/huggingFaceEmbeddings.py)
+* [sentence_bert](./sentence_emb/sentence_bert.py)
+* [m3e_emb](./sentence_emb/m3e_emb.py)
+* [luotuo_emb](./sentence_emb/luotuo_emb.py)
 
