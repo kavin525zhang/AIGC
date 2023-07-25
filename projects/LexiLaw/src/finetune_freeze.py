@@ -1,7 +1,6 @@
 
 
 import os
-os.environ["CUDA_VISIBLE_DEVICES"] = '4,5,6'
 from transformers.integrations import TensorBoardCallback
 from torch.utils.tensorboard import SummaryWriter
 import sys
@@ -66,11 +65,14 @@ def main():
         model_args.model_name_or_path, trust_remote_code=True
     )
     tokenizer = ChatGLMTokenizer.from_pretrained(model_args.tokenizer_name, trust_remote_code=True)
+    #tokenizer.bos_token_id = 0
+    #tokenizer.eos_token_id = 0
     model.gradient_checkpointing_enable()
     model.enable_input_require_grads()
     model.is_parallelizable = True
     model.model_parallel = True
     model.lm_head = CastOutputToFloat(model.lm_head)
+    #model.transformer.output_layer = CastOutputToFloat(model.transformer.output_layer)
     model.config.use_cache = (
         False  
     )

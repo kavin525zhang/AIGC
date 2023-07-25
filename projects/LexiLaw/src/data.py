@@ -57,10 +57,8 @@ class InstrutionCollator(DefaultDataCollator):
             if len(tgt_tokens) > max_tgt_len:
                 tgt_tokens = tgt_tokens[:max_tgt_len]
             tokens = src_tokens + ["[gMASK]", "<sop>"] + tgt_tokens + ["<eop>"]
-
-
             input_ids = self.tokenizer.convert_tokens_to_ids(tokens)
-            context_length = input_ids.index(self.tokenizer.bos_token_id)
+            context_length = input_ids.index(self.tokenizer.bos_token_id) # 
             mask_position = context_length - 1
             labels = [-100] * context_length + input_ids[mask_position + 1:]
             pad_len = self.max_len - len(input_ids)

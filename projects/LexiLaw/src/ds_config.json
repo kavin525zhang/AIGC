@@ -1,12 +1,13 @@
 {
   "train_batch_size": "auto",
+  "train_micro_batch_size_per_gpu": "auto",
   "fp16": {
     "enabled": true,
     "min_loss_scale": 1,
     "opt_level": "O2"
   },
   "zero_optimization": {
-    "stage": 1,
+    "stage": 2,
     "offload_param": {
       "device": "cpu"
     },

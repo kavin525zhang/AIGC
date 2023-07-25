@@ -1,0 +1,545 @@
+2023-07-21 11:54:31.810305: I tensorflow/core/util/port.cc:110] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-07-21 11:54:31.861514: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+[2023-07-21 11:54:33,218] [WARNING] [runner.py:191:fetch_hostfile] Unable to find hostfile, will proceed with training with local resources only.
+Detected CUDA_VISIBLE_DEVICES=0,1,2,3,4,5 but ignoring it because one or several of --include/--exclude/--num_gpus/--num_nodes cl args were used. If you want to use CUDA_VISIBLE_DEVICES don't pass any of these arguments to deepspeed.
+[2023-07-21 11:54:33,287] [INFO] [runner.py:541:main] cmd = /home/zhangkaiming/miniconda3/bin/python -u -m deepspeed.launcher.launch --world_info=eyJsb2NhbGhvc3QiOiBbMCwgMSwgMiwgMywgNCwgNV19 --master_addr=127.0.0.1 --master_port=11458 --enable_each_rank_log=None finetune_freeze.py --train_path /home/zhangkaiming/datasets/patent/patent_train.json --max_len 5100 --max_input_len 4100 --model_name_or_path /data9/NFS/patent/model_hub/chatglm-6b --tokenizer_name /data9/NFS/patent/model_hub/chatglm-6b --lora_rank 8 --per_device_train_batch_size 1 --gradient_accumulation_steps 16 --num_train_epochs 10 --save_steps 100 --learning_rate 1e-5 --fp16 --remove_unused_columns false --logging_steps 50 --output_dir ./output_freeze --deepspeed ./ds_config.json
+[2023-07-21 11:54:36,495] [INFO] [launch.py:222:main] 0 NCCL_P2P_DISABLE=1
+[2023-07-21 11:54:36,495] [INFO] [launch.py:229:main] WORLD INFO DICT: {'localhost': [0, 1, 2, 3, 4, 5]}
+[2023-07-21 11:54:36,495] [INFO] [launch.py:235:main] nnodes=1, num_local_procs=6, node_rank=0
+[2023-07-21 11:54:36,495] [INFO] [launch.py:246:main] global_rank_mapping=defaultdict(<class 'list'>, {'localhost': [0, 1, 2, 3, 4, 5]})
+[2023-07-21 11:54:36,495] [INFO] [launch.py:247:main] dist_world_size=6
+[2023-07-21 11:54:36,495] [INFO] [launch.py:249:main] Setting CUDA_VISIBLE_DEVICES=0,1,2,3,4,5
+
+===================================BUG REPORT===================================
+Welcome to bitsandbytes. For bug reports, please run
+
+python -m bitsandbytes
+
+ and submit this information together with your error trace to: https://github.com/TimDettmers/bitsandbytes/issues
+================================================================================
+
+===================================BUG REPORT===================================
+Welcome to bitsandbytes. For bug reports, please run
+
+python -m bitsandbytes
+
+ and submit this information together with your error trace to: https://github.com/TimDettmers/bitsandbytes/issues
+================================================================================
+
+===================================BUG REPORT===================================
+Welcome to bitsandbytes. For bug reports, please run
+
+python -m bitsandbytes
+
+ and submit this information together with your error trace to: https://github.com/TimDettmers/bitsandbytes/issues
+================================================================================
+
+===================================BUG REPORT===================================
+Welcome to bitsandbytes. For bug reports, please run
+
+python -m bitsandbytes
+
+ and submit this information together with your error trace to: https://github.com/TimDettmers/bitsandbytes/issues
+================================================================================
+
+===================================BUG REPORT===================================
+Welcome to bitsandbytes. For bug reports, please run
+
+python -m bitsandbytes
+
+ and submit this information together with your error trace to: https://github.com/TimDettmers/bitsandbytes/issues
+================================================================================
+
+===================================BUG REPORT===================================
+Welcome to bitsandbytes. For bug reports, please run
+
+python -m bitsandbytes
+
+ and submit this information together with your error trace to: https://github.com/TimDettmers/bitsandbytes/issues
+================================================================================
+bin /home/zhangkaiming/miniconda3/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so
+/home/zhangkaiming/miniconda3/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:149: UserWarning: /home/zhangkaiming/miniconda3 did not contain ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] as expected! Searching further paths...
+  warn(msg)
+CUDA SETUP: CUDA runtime path found: /usr/local/cuda-11.8/lib64/libcudart.so
+CUDA SETUP: Highest compute capability among GPUs detected: 9.0
+CUDA SETUP: Detected CUDA version 118
+CUDA SETUP: Loading binary /home/zhangkaiming/miniconda3/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so...
+bin /home/zhangkaiming/miniconda3/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so
+/home/zhangkaiming/miniconda3/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:149: UserWarning: /home/zhangkaiming/miniconda3 did not contain ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] as expected! Searching further paths...
+  warn(msg)
+CUDA SETUP: CUDA runtime path found: /usr/local/cuda-11.8/lib64/libcudart.so
+CUDA SETUP: Highest compute capability among GPUs detected: 9.0
+CUDA SETUP: Detected CUDA version 118
+CUDA SETUP: Loading binary /home/zhangkaiming/miniconda3/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so...
+bin /home/zhangkaiming/miniconda3/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so
+bin /home/zhangkaiming/miniconda3/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so
+/home/zhangkaiming/miniconda3/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:149: UserWarning: /home/zhangkaiming/miniconda3 did not contain ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] as expected! Searching further paths...
+  warn(msg)
+CUDA SETUP: CUDA runtime path found: /usr/local/cuda-11.8/lib64/libcudart.so.11.0
+CUDA SETUP: Highest compute capability among GPUs detected: 9.0
+CUDA SETUP: Detected CUDA version 118
+CUDA SETUP: Loading binary /home/zhangkaiming/miniconda3/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so...
+/home/zhangkaiming/miniconda3/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:149: UserWarning: /home/zhangkaiming/miniconda3 did not contain ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] as expected! Searching further paths...
+  warn(msg)
+CUDA SETUP: CUDA runtime path found: /usr/local/cuda-11.8/lib64/libcudart.so
+CUDA SETUP: Highest compute capability among GPUs detected: 9.0
+CUDA SETUP: Detected CUDA version 118
+CUDA SETUP: Loading binary /home/zhangkaiming/miniconda3/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so...
+bin /home/zhangkaiming/miniconda3/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so
+/home/zhangkaiming/miniconda3/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:149: UserWarning: /home/zhangkaiming/miniconda3 did not contain ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] as expected! Searching further paths...
+  warn(msg)
+CUDA SETUP: CUDA runtime path found: /usr/local/cuda-11.8/lib64/libcudart.so
+CUDA SETUP: Highest compute capability among GPUs detected: 9.0
+CUDA SETUP: Detected CUDA version 118
+CUDA SETUP: Loading binary /home/zhangkaiming/miniconda3/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so...
+bin /home/zhangkaiming/miniconda3/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so
+/home/zhangkaiming/miniconda3/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:149: UserWarning: /home/zhangkaiming/miniconda3 did not contain ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] as expected! Searching further paths...
+  warn(msg)
+CUDA SETUP: CUDA runtime path found: /usr/local/cuda-11.8/lib64/libcudart.so.11.0
+CUDA SETUP: Highest compute capability among GPUs detected: 9.0
+CUDA SETUP: Detected CUDA version 118
+CUDA SETUP: Loading binary /home/zhangkaiming/miniconda3/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so...
+[2023-07-21 11:54:43,065] [INFO] [comm.py:622:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+The argument `trust_remote_code` is to be used with Auto classes. It has no effect here and is ignored.
+The argument `trust_remote_code` is to be used with Auto classes. It has no effect here and is ignored.
+The argument `trust_remote_code` is to be used with Auto classes. It has no effect here and is ignored.
+The argument `trust_remote_code` is to be used with Auto classes. It has no effect here and is ignored.
+The argument `trust_remote_code` is to be used with Auto classes. It has no effect here and is ignored.
+The argument `trust_remote_code` is to be used with Auto classes. It has no effect here and is ignored.
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:01<00:12,  1.82s/it]Loading checkpoint shards:  12%|█▎        | 1/8 [00:01<00:12,  1.84s/it]Loading checkpoint shards:  12%|█▎        | 1/8 [00:01<00:13,  1.86s/it]Loading checkpoint shards:  12%|█▎        | 1/8 [00:01<00:13,  1.89s/it]Loading checkpoint shards:  12%|█▎        | 1/8 [00:01<00:13,  1.91s/it]Loading checkpoint shards:  12%|█▎        | 1/8 [00:01<00:13,  1.98s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:03<00:10,  1.69s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:03<00:10,  1.71s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:03<00:10,  1.79s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:03<00:10,  1.81s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:03<00:10,  1.80s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:03<00:10,  1.79s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:04<00:07,  1.55s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:04<00:08,  1.60s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:04<00:08,  1.60s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:05<00:08,  1.66s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:05<00:08,  1.67s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:05<00:08,  1.67s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:06<00:05,  1.43s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:06<00:05,  1.43s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:06<00:05,  1.45s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:06<00:06,  1.56s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:06<00:06,  1.57s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:06<00:06,  1.57s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:07<00:04,  1.37s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:07<00:04,  1.37s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:07<00:04,  1.40s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:07<00:04,  1.48s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:07<00:04,  1.48s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:07<00:04,  1.51s/it]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:08<00:02,  1.35s/it]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:08<00:02,  1.33s/it]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:08<00:02,  1.35s/it]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:09<00:02,  1.46s/it]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:09<00:02,  1.46s/it]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:09<00:01,  1.18s/it]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:09<00:01,  1.21s/it]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:09<00:03,  1.55s/it]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:09<00:01,  1.17s/it]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:10<00:01,  1.26s/it]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:10<00:01,  1.26s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:10<00:00,  1.09s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:10<00:00,  1.30s/it]
+Loading checkpoint shards:  88%|████████▊ | 7/8 [00:10<00:01,  1.31s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:10<00:00,  1.08s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:10<00:00,  1.31s/it]
+Loading checkpoint shards: 100%|██████████| 8/8 [00:10<00:00,  1.11s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:10<00:00,  1.31s/it]
+trainable params: 1006899200 || all params: 6173286400 || trainable%: 16.31058620575258
+trainable params: 1006899200 || all params: 6173286400 || trainable%: 16.31058620575258
+trainable params: 1006899200 || all params: 6173286400 || trainable%: 16.31058620575258
+Loading checkpoint shards: 100%|██████████| 8/8 [00:10<00:00,  1.11s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:10<00:00,  1.37s/it]
+Loading checkpoint shards: 100%|██████████| 8/8 [00:11<00:00,  1.14s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:11<00:00,  1.38s/it]
+trainable params: 1006899200 || all params: 6173286400 || trainable%: 16.31058620575258
+Loading checkpoint shards: 100%|██████████| 8/8 [00:11<00:00,  1.15s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:11<00:00,  1.40s/it]
+trainable params: 1006899200 || all params: 6173286400 || trainable%: 16.31058620575258
+trainable params: 1006899200 || all params: 6173286400 || trainable%: 16.31058620575258
+You are adding a <class 'transformers.integrations.TensorBoardCallback'> to the callbacks of this Trainer, but there is already one. The currentlist of callbacks is
+:DefaultFlowCallback
+TensorBoardCallback
+You are adding a <class 'transformers.integrations.TensorBoardCallback'> to the callbacks of this Trainer, but there is already one. The currentlist of callbacks is
+:DefaultFlowCallback
+TensorBoardCallback
+You are adding a <class 'transformers.integrations.TensorBoardCallback'> to the callbacks of this Trainer, but there is already one. The currentlist of callbacks is
+:DefaultFlowCallback
+TensorBoardCallback
+You are adding a <class 'transformers.integrations.TensorBoardCallback'> to the callbacks of this Trainer, but there is already one. The currentlist of callbacks is
+:DefaultFlowCallback
+TensorBoardCallback
+You are adding a <class 'transformers.integrations.TensorBoardCallback'> to the callbacks of this Trainer, but there is already one. The currentlist of callbacks is
+:DefaultFlowCallback
+TensorBoardCallback
+You are adding a <class 'transformers.integrations.TensorBoardCallback'> to the callbacks of this Trainer, but there is already one. The currentlist of callbacks is
+:DefaultFlowCallback
+TensorBoardCallback
+Using /home/zhangkaiming/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+Using /home/zhangkaiming/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+Using /home/zhangkaiming/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+Using /home/zhangkaiming/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+Using /home/zhangkaiming/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+Using /home/zhangkaiming/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+Detected CUDA files, patching ldflags
+Emitting ninja build file /home/zhangkaiming/.cache/torch_extensions/py39_cu118/cpu_adam/build.ninja...
+Building extension module cpu_adam...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading extension module cpu_adam...
+Loading extension module cpu_adam...
+Time to load cpu_adam op: 3.2166032791137695 seconds
+Time to load cpu_adam op: 3.0585124492645264 seconds
+Loading extension module cpu_adam...
+Time to load cpu_adam op: 3.054908275604248 seconds
+Loading extension module cpu_adam...
+Time to load cpu_adam op: 3.1555140018463135 seconds
+Loading extension module cpu_adam...
+Time to load cpu_adam op: 3.166266918182373 seconds
+Loading extension module cpu_adam...
+Time to load cpu_adam op: 3.1603477001190186 seconds
+Using /home/zhangkaiming/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+Using /home/zhangkaiming/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+Using /home/zhangkaiming/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+Using /home/zhangkaiming/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+Using /home/zhangkaiming/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+Using /home/zhangkaiming/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+Emitting ninja build file /home/zhangkaiming/.cache/torch_extensions/py39_cu118/utils/build.ninja...
+Building extension module utils...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading extension module utils...
+Time to load utils op: 0.5461959838867188 seconds
+Loading extension module utils...
+Loading extension module utils...
+Time to load utils op: 0.3040609359741211 seconds
+Time to load utils op: 0.40401196479797363 seconds
+Loading extension module utils...
+Time to load utils op: 0.30609631538391113 seconds
+Loading extension module utils...
+Time to load utils op: 0.30606937408447266 seconds
+Loading extension module utils...
+Time to load utils op: 0.3036057949066162 seconds
+Rank: 4 partition count [6] and sizes[(167816534, False)] 
+Rank: 0 partition count [6] and sizes[(167816534, False)] 
+Rank: 5 partition count [6] and sizes[(167816534, False)] 
+Rank: 2 partition count [6] and sizes[(167816534, False)] 
+Rank: 1 partition count [6] and sizes[(167816534, False)] 
+Rank: 3 partition count [6] and sizes[(167816534, False)] 
+Using /home/zhangkaiming/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+No modifications detected for re-loaded extension module utils, skipping build step...
+Loading extension module utils...
+Time to load utils op: 0.0004000663757324219 seconds
+Using /home/zhangkaiming/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+No modifications detected for re-loaded extension module utils, skipping build step...
+Loading extension module utils...
+Time to load utils op: 0.0004074573516845703 seconds
+Using /home/zhangkaiming/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+No modifications detected for re-loaded extension module utils, skipping build step...
+Loading extension module utils...
+Time to load utils op: 0.0021560192108154297 seconds
+Using /home/zhangkaiming/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+No modifications detected for re-loaded extension module utils, skipping build step...
+Loading extension module utils...
+Time to load utils op: 0.00041365623474121094 seconds
+Using /home/zhangkaiming/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+No modifications detected for re-loaded extension module utils, skipping build step...
+Loading extension module utils...
+Time to load utils op: 0.0003230571746826172 seconds
+Using /home/zhangkaiming/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+No modifications detected for re-loaded extension module utils, skipping build step...
+Loading extension module utils...
+Time to load utils op: 0.0003228187561035156 seconds
+  0%|          | 0/10690 [00:00<?, ?it/s]  0%|          | 1/10690 [01:03<187:20:57, 63.10s/it]Killed
+2023-07-21 11:57:35.287692: I tensorflow/core/util/port.cc:110] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-07-21 11:57:35.324637: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+[2023-07-21 11:57:36,825] [WARNING] [runner.py:191:fetch_hostfile] Unable to find hostfile, will proceed with training with local resources only.
+Detected CUDA_VISIBLE_DEVICES=0,1,2,3,4,5 but ignoring it because one or several of --include/--exclude/--num_gpus/--num_nodes cl args were used. If you want to use CUDA_VISIBLE_DEVICES don't pass any of these arguments to deepspeed.
+[2023-07-21 11:57:36,898] [INFO] [runner.py:541:main] cmd = /home/zhangkaiming/miniconda3/bin/python -u -m deepspeed.launcher.launch --world_info=eyJsb2NhbGhvc3QiOiBbMCwgMSwgMiwgMywgNCwgNV19 --master_addr=127.0.0.1 --master_port=11458 --enable_each_rank_log=None finetune_freeze.py --train_path /home/zhangkaiming/datasets/patent/patent_train.json --max_len 5100 --max_input_len 4100 --model_name_or_path /data9/NFS/patent/model_hub/chatglm-6b --tokenizer_name /data9/NFS/patent/model_hub/chatglm-6b --lora_rank 8 --per_device_train_batch_size 2 --gradient_accumulation_steps 16 --num_train_epochs 3 --save_steps 100 --learning_rate 1e-5 --fp16 --remove_unused_columns false --logging_steps 50 --output_dir ./output_freeze --deepspeed ./ds_config.json
+[2023-07-21 11:57:40,773] [INFO] [launch.py:222:main] 0 NCCL_P2P_DISABLE=1
+[2023-07-21 11:57:40,773] [INFO] [launch.py:229:main] WORLD INFO DICT: {'localhost': [0, 1, 2, 3, 4, 5]}
+[2023-07-21 11:57:40,773] [INFO] [launch.py:235:main] nnodes=1, num_local_procs=6, node_rank=0
+[2023-07-21 11:57:40,773] [INFO] [launch.py:246:main] global_rank_mapping=defaultdict(<class 'list'>, {'localhost': [0, 1, 2, 3, 4, 5]})
+[2023-07-21 11:57:40,773] [INFO] [launch.py:247:main] dist_world_size=6
+[2023-07-21 11:57:40,773] [INFO] [launch.py:249:main] Setting CUDA_VISIBLE_DEVICES=0,1,2,3,4,5
+
+===================================BUG REPORT===================================
+Welcome to bitsandbytes. For bug reports, please run
+
+python -m bitsandbytes
+
+ and submit this information together with your error trace to: https://github.com/TimDettmers/bitsandbytes/issues
+================================================================================
+
+===================================BUG REPORT===================================
+Welcome to bitsandbytes. For bug reports, please run
+
+python -m bitsandbytes
+
+ and submit this information together with your error trace to: https://github.com/TimDettmers/bitsandbytes/issues
+================================================================================
+
+===================================BUG REPORT===================================
+Welcome to bitsandbytes. For bug reports, please run
+
+python -m bitsandbytes
+
+ and submit this information together with your error trace to: https://github.com/TimDettmers/bitsandbytes/issues
+================================================================================
+
+===================================BUG REPORT===================================
+Welcome to bitsandbytes. For bug reports, please run
+
+python -m bitsandbytes
+
+ and submit this information together with your error trace to: https://github.com/TimDettmers/bitsandbytes/issues
+================================================================================
+
+===================================BUG REPORT===================================
+Welcome to bitsandbytes. For bug reports, please run
+
+python -m bitsandbytes
+
+ and submit this information together with your error trace to: https://github.com/TimDettmers/bitsandbytes/issues
+================================================================================
+
+===================================BUG REPORT===================================
+Welcome to bitsandbytes. For bug reports, please run
+
+python -m bitsandbytes
+
+ and submit this information together with your error trace to: https://github.com/TimDettmers/bitsandbytes/issues
+================================================================================
+bin /home/zhangkaiming/miniconda3/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so
+/home/zhangkaiming/miniconda3/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:149: UserWarning: /home/zhangkaiming/miniconda3 did not contain ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] as expected! Searching further paths...
+  warn(msg)
+CUDA SETUP: CUDA runtime path found: /usr/local/cuda-11.8/lib64/libcudart.so.11.0
+CUDA SETUP: Highest compute capability among GPUs detected: 9.0
+CUDA SETUP: Detected CUDA version 118
+CUDA SETUP: Loading binary /home/zhangkaiming/miniconda3/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so...
+bin /home/zhangkaiming/miniconda3/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so
+/home/zhangkaiming/miniconda3/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:149: UserWarning: /home/zhangkaiming/miniconda3 did not contain ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] as expected! Searching further paths...
+  warn(msg)
+CUDA SETUP: CUDA runtime path found: /usr/local/cuda-11.8/lib64/libcudart.so.11.0
+CUDA SETUP: Highest compute capability among GPUs detected: 9.0
+CUDA SETUP: Detected CUDA version 118
+CUDA SETUP: Loading binary /home/zhangkaiming/miniconda3/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so...
+bin /home/zhangkaiming/miniconda3/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so
+/home/zhangkaiming/miniconda3/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:149: UserWarning: /home/zhangkaiming/miniconda3 did not contain ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] as expected! Searching further paths...
+  warn(msg)
+CUDA SETUP: CUDA runtime path found: /usr/local/cuda-11.8/lib64/libcudart.so.11.0
+CUDA SETUP: Highest compute capability among GPUs detected: 9.0
+CUDA SETUP: Detected CUDA version 118
+CUDA SETUP: Loading binary /home/zhangkaiming/miniconda3/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so...
+bin /home/zhangkaiming/miniconda3/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so
+/home/zhangkaiming/miniconda3/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:149: UserWarning: /home/zhangkaiming/miniconda3 did not contain ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] as expected! Searching further paths...
+  warn(msg)
+CUDA SETUP: CUDA runtime path found: /usr/local/cuda-11.8/lib64/libcudart.so
+CUDA SETUP: Highest compute capability among GPUs detected: 9.0
+CUDA SETUP: Detected CUDA version 118
+CUDA SETUP: Loading binary /home/zhangkaiming/miniconda3/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so...
+bin /home/zhangkaiming/miniconda3/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so
+/home/zhangkaiming/miniconda3/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:149: UserWarning: /home/zhangkaiming/miniconda3 did not contain ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] as expected! Searching further paths...
+  warn(msg)
+CUDA SETUP: CUDA runtime path found: /usr/local/cuda-11.8/lib64/libcudart.so
+CUDA SETUP: Highest compute capability among GPUs detected: 9.0
+CUDA SETUP: Detected CUDA version 118
+CUDA SETUP: Loading binary /home/zhangkaiming/miniconda3/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so...
+bin /home/zhangkaiming/miniconda3/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so
+/home/zhangkaiming/miniconda3/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:149: UserWarning: /home/zhangkaiming/miniconda3 did not contain ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] as expected! Searching further paths...
+  warn(msg)
+CUDA SETUP: CUDA runtime path found: /usr/local/cuda-11.8/lib64/libcudart.so.11.0
+CUDA SETUP: Highest compute capability among GPUs detected: 9.0
+CUDA SETUP: Detected CUDA version 118
+CUDA SETUP: Loading binary /home/zhangkaiming/miniconda3/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so...
+[2023-07-21 11:57:46,910] [INFO] [comm.py:622:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+The argument `trust_remote_code` is to be used with Auto classes. It has no effect here and is ignored.
+The argument `trust_remote_code` is to be used with Auto classes. It has no effect here and is ignored.
+The argument `trust_remote_code` is to be used with Auto classes. It has no effect here and is ignored.
+The argument `trust_remote_code` is to be used with Auto classes. It has no effect here and is ignored.
+The argument `trust_remote_code` is to be used with Auto classes. It has no effect here and is ignored.
+The argument `trust_remote_code` is to be used with Auto classes. It has no effect here and is ignored.
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:01<00:09,  1.29s/it]Loading checkpoint shards:  12%|█▎        | 1/8 [00:01<00:09,  1.34s/it]Loading checkpoint shards:  12%|█▎        | 1/8 [00:01<00:10,  1.47s/it]Loading checkpoint shards:  12%|█▎        | 1/8 [00:01<00:10,  1.47s/it]Loading checkpoint shards:  12%|█▎        | 1/8 [00:01<00:10,  1.49s/it]Loading checkpoint shards:  12%|█▎        | 1/8 [00:01<00:10,  1.51s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:02<00:07,  1.20s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:02<00:07,  1.33s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:02<00:08,  1.49s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:03<00:09,  1.56s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:03<00:09,  1.58s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:03<00:09,  1.59s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:03<00:06,  1.29s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:03<00:06,  1.31s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:04<00:07,  1.45s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:04<00:07,  1.48s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:04<00:07,  1.52s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:04<00:07,  1.53s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:05<00:05,  1.32s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:05<00:05,  1.31s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:05<00:05,  1.41s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:05<00:05,  1.40s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:05<00:05,  1.44s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:05<00:05,  1.44s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:06<00:03,  1.33s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:06<00:03,  1.30s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:07<00:04,  1.36s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:07<00:04,  1.35s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:07<00:04,  1.38s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:07<00:04,  1.43s/it]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:07<00:02,  1.30s/it]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:07<00:02,  1.33s/it]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:08<00:02,  1.33s/it]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:08<00:02,  1.39s/it]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:08<00:02,  1.39s/it]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:08<00:01,  1.16s/it]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:08<00:01,  1.20s/it]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:08<00:02,  1.45s/it]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:09<00:01,  1.15s/it]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:09<00:01,  1.19s/it]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:09<00:01,  1.24s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:09<00:00,  1.03s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:09<00:00,  1.18s/it]
+trainable params: 1006899200 || all params: 6173286400 || trainable%: 16.31058620575258
+Loading checkpoint shards:  88%|████████▊ | 7/8 [00:09<00:01,  1.27s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:09<00:00,  1.13s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:09<00:00,  1.22s/it]
+Loading checkpoint shards: 100%|██████████| 8/8 [00:09<00:00,  1.06s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:09<00:00,  1.25s/it]
+trainable params: 1006899200 || all params: 6173286400 || trainable%: 16.31058620575258
+trainable params: 1006899200 || all params: 6173286400 || trainable%: 16.31058620575258
+Loading checkpoint shards: 100%|██████████| 8/8 [00:10<00:00,  1.08s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:10<00:00,  1.28s/it]
+Loading checkpoint shards: 100%|██████████| 8/8 [00:10<00:00,  1.13s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:10<00:00,  1.29s/it]
+trainable params: 1006899200 || all params: 6173286400 || trainable%: 16.31058620575258
+trainable params: 1006899200 || all params: 6173286400 || trainable%: 16.31058620575258
+Loading checkpoint shards: 100%|██████████| 8/8 [00:10<00:00,  1.11s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:10<00:00,  1.31s/it]
+trainable params: 1006899200 || all params: 6173286400 || trainable%: 16.31058620575258
+You are adding a <class 'transformers.integrations.TensorBoardCallback'> to the callbacks of this Trainer, but there is already one. The currentlist of callbacks is
+:DefaultFlowCallback
+TensorBoardCallback
+You are adding a <class 'transformers.integrations.TensorBoardCallback'> to the callbacks of this Trainer, but there is already one. The currentlist of callbacks is
+:DefaultFlowCallback
+TensorBoardCallback
+You are adding a <class 'transformers.integrations.TensorBoardCallback'> to the callbacks of this Trainer, but there is already one. The currentlist of callbacks is
+:DefaultFlowCallback
+TensorBoardCallback
+You are adding a <class 'transformers.integrations.TensorBoardCallback'> to the callbacks of this Trainer, but there is already one. The currentlist of callbacks is
+:DefaultFlowCallback
+TensorBoardCallback
+You are adding a <class 'transformers.integrations.TensorBoardCallback'> to the callbacks of this Trainer, but there is already one. The currentlist of callbacks is
+:DefaultFlowCallback
+TensorBoardCallback
+You are adding a <class 'transformers.integrations.TensorBoardCallback'> to the callbacks of this Trainer, but there is already one. The currentlist of callbacks is
+:DefaultFlowCallback
+TensorBoardCallback
+Using /home/zhangkaiming/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+Using /home/zhangkaiming/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+Using /home/zhangkaiming/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+Using /home/zhangkaiming/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+Using /home/zhangkaiming/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+Detected CUDA files, patching ldflags
+Using /home/zhangkaiming/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+Emitting ninja build file /home/zhangkaiming/.cache/torch_extensions/py39_cu118/cpu_adam/build.ninja...
+Building extension module cpu_adam...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading extension module cpu_adam...
+Time to load cpu_adam op: 3.3760626316070557 seconds
+Loading extension module cpu_adam...
+Loading extension module cpu_adam...
+Time to load cpu_adam op: 3.2311768531799316 seconds
+Time to load cpu_adam op: 3.2210500240325928 seconds
+Loading extension module cpu_adam...
+Time to load cpu_adam op: 3.323192596435547 seconds
+Loading extension module cpu_adam...
+Time to load cpu_adam op: 3.2659027576446533 seconds
+Loading extension module cpu_adam...
+Time to load cpu_adam op: 3.272796630859375 seconds
+Using /home/zhangkaiming/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+Using /home/zhangkaiming/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+Using /home/zhangkaiming/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+Using /home/zhangkaiming/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+Using /home/zhangkaiming/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+Using /home/zhangkaiming/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+Emitting ninja build file /home/zhangkaiming/.cache/torch_extensions/py39_cu118/utils/build.ninja...
+Building extension module utils...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading extension module utils...
+Time to load utils op: 0.6192171573638916 seconds
+Loading extension module utils...
+Time to load utils op: 0.4058113098144531 seconds
+Loading extension module utils...
+Time to load utils op: 0.30513596534729004 seconds
+Loading extension module utils...
+Time to load utils op: 0.30482959747314453 seconds
+Loading extension module utils...
+Loading extension module utils...
+Time to load utils op: 0.3047604560852051 seconds
+Time to load utils op: 0.30640554428100586 seconds
+Rank: 3 partition count [6] and sizes[(167816534, False)] 
+Rank: 0 partition count [6] and sizes[(167816534, False)] 
+Rank: 1 partition count [6] and sizes[(167816534, False)] 
+Rank: 4 partition count [6] and sizes[(167816534, False)] 
+Rank: 5 partition count [6] and sizes[(167816534, False)] 
+Rank: 2 partition count [6] and sizes[(167816534, False)] 
+Using /home/zhangkaiming/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+No modifications detected for re-loaded extension module utils, skipping build step...
+Loading extension module utils...
+Time to load utils op: 0.0003566741943359375 seconds
+Using /home/zhangkaiming/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+No modifications detected for re-loaded extension module utils, skipping build step...
+Loading extension module utils...
+Time to load utils op: 0.0005474090576171875 seconds
+Using /home/zhangkaiming/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+No modifications detected for re-loaded extension module utils, skipping build step...
+Loading extension module utils...
+Time to load utils op: 0.0007851123809814453 seconds
+Using /home/zhangkaiming/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+No modifications detected for re-loaded extension module utils, skipping build step...
+Loading extension module utils...
+Time to load utils op: 0.0019371509552001953 seconds
+Using /home/zhangkaiming/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+No modifications detected for re-loaded extension module utils, skipping build step...
+Loading extension module utils...
+Time to load utils op: 0.00043702125549316406 seconds
+Using /home/zhangkaiming/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+No modifications detected for re-loaded extension module utils, skipping build step...
+Loading extension module utils...
+Time to load utils op: 0.00039386749267578125 seconds
+  0%|          | 0/1602 [00:00<?, ?it/s]  0%|          | 1/1602 [02:22<63:24:44, 142.59s/it]  0%|          | 2/1602 [04:46<63:44:18, 143.41s/it]  0%|          | 3/1602 [07:10<63:51:27, 143.77s/it]  0%|          | 4/1602 [09:35<63:55:36, 144.02s/it]  0%|          | 5/1602 [11:59<63:54:15, 144.05s/it]  0%|          | 6/1602 [14:24<64:06:31, 144.61s/it]  0%|          | 7/1602 [16:48<63:58:47, 144.41s/it]  0%|          | 8/1602 [19:13<64:01:32, 144.60s/it]  1%|          | 9/1602 [21:39<64:06:29, 144.88s/it]  1%|          | 10/1602 [24:03<63:56:53, 144.61s/it]  1%|          | 11/1602 [26:29<64:02:12, 144.90s/it]  1%|          | 12/1602 [28:52<63:51:21, 144.58s/it]  1%|          | 13/1602 [31:17<63:51:25, 144.67s/it]  1%|          | 14/1602 [33:41<63:44:51, 144.52s/it]  1%|          | 15/1602 [36:07<63:49:43, 144.79s/it]  1%|          | 16/1602 [38:32<63:46:37, 144.76s/it]╭───────────────────── Traceback (most recent call last) ──────────────────────╮
+│ /home/zhangkaiming/projects/private_project/AIGC/projects/LexiLaw/src/finetu │
+│ ne_freeze.py:118 in <module>                                                 │
+│                                                                              │
+│   115                                                                        │
+│   116                                                                        │
+│   117 if __name__ == "__main__":                                             │
+│ ❱ 118 │   main()                                                             │
+│   119                                                                        │
+│                                                                              │
+│ /home/zhangkaiming/projects/private_project/AIGC/projects/LexiLaw/src/finetu │
+│ ne_freeze.py:110 in main                                                     │
+│                                                                              │
+│   107 │   )                                                                  │
+│   108 │                                                                      │
+│   109 │                                                                      │
+│ ❱ 110 │   trainer.train()                                                    │
+│   111 │   writer.close()                                                     │
+│   112 │                                                                      │
+│   113 │   # save model                                                       │
+│                                                                              │
+│ /home/zhangkaiming/miniconda3/lib/python3.9/site-packages/transformers/train │
+│ er.py:1645 in train                                                          │
+│                                                                              │
+│   1642 │   │   inner_training_loop = find_executable_batch_size(             │
+│   1643 │   │   │   self._inner_training_loop, self._train_batch_size, args.a │
+│   1644 │   │   )                                                             │
+│ ❱ 1645 │   │   return inner_training_loop(                                   │
+│   1646 │   │   │   args=args,                                                │
+│   1647 │   │   │   resume_from_checkpoint=resume_from_checkpoint,            │
+│   1648 │   │   │   trial=trial,                                              │
+│                                                                              │
+│ /home/zhangkaiming/miniconda3/lib/python3.9/site-packages/transformers/train │
+│ er.py:1916 in _inner_training_loop                                           │
+│                                                                              │
+│   1913 │   │   │   │   rng_to_sync = True                                    │
+│   1914 │   │   │                                                             │
+│   1915 │   │   │   step = -1                                                 │
+│ ❱ 1916 │   │   │   for step, inputs in enumerate(epoch_iterator):            │
+│   1917 │   │   │   │   total_batched_samples += 1                            │
+│   1918 │   │   │   │   if rng_to_sync:                                       │
+│   1919 │   │   │   │   │   self._load_rng_state(resume_from_checkpoint)      │
+│                                                                              │
+│ /home/zhangkaiming/miniconda3/lib/python3.9/site-packages/torch/utils/data/d │
+│ ataloader.py:633 in __next__                                                 │
+│                                                                              │
+│    630 │   │   │   if self._sampler_iter is None:                            │
+│    631 │   │   │   │   # TODO(https://github.com/pytorch/pytorch/issues/7675 │
+│    632 │   │   │   │   self._reset()  # type: ignore[call-arg]               │
+│ ❱  633 │   │   │   data = self._next_data()                                  │
+│    634 │   │   │   self._num_yielded += 1                                    │
+│    635 │   │   │   if self._dataset_kind == _DatasetKind.Iterable and \      │
+│    636 │   │   │   │   │   self._IterableDataset_len_called is not None and  │
+│                                                                              │
+│ /home/zhangkaiming/miniconda3/lib/python3.9/site-packages/torch/utils/data/d │
+│ ataloader.py:677 in _next_data                                               │
+│                                                                              │
+│    674 │                                                                     │
+│    675 │   def _next_data(self):                                             │
+│    676 │   │   index = self._next_index()  # may raise StopIteration         │
+│ ❱  677 │   │   data = self._dataset_fetcher.fetch(index)  # may raise StopIt │
+│    678 │   │   if self._pin_memory:                                          │
+│    679 │   │   │   data = _utils.pin_memory.pin_memory(data, self._pin_memor │
+│    680 │   │   return data                                                   │
+│                                                                              │
+│ /home/zhangkaiming/miniconda3/lib/python3.9/site-packages/torch/utils/data/_ │
+│ utils/fetch.py:54 in fetch                                                   │
+│                                                                              │
+│   51 │   │   │   │   data = [self.dataset[idx] for idx in possibly_batched_i │
+│   52 │   │   else:                                                           │
+│   53 │   │   │   data = self.dataset[possibly_batched_index]                 │
+│ ❱ 54 │   │   return self.collate_fn(data)                                    │
+│   55                                                                         │
+│                                                                              │
+│ /home/zhangkaiming/projects/private_project/AIGC/projects/LexiLaw/src/data.p │
+│ y:56 in __call__                                                             │
+│                                                                              │
+│   53 │   │   │   src_tokens = self.tokenizer.tokenize(input)                 │
+│   54 │   │   │   if len(src_tokens) > self.max_input_len:                    │
+│   55 │   │   │   │   src_tokens = src_tokens[:self.max_input_len]            │
+│ ❱ 56 │   │   │   tgt_tokens = self.tokenizer.tokenize(answer)                │
+│   57 │   │   │   if len(tgt_tokens) > max_tgt_len:                           │
+│   58 │   │   │   │   tgt_tokens = tgt_tokens[:max_tgt_len]                   │
+│   59 │   │   │   tokens = src_tokens + ["[gMASK]", "<sop>"] + tgt_tokens + [ │
+│                                                                              │
+│ /home/zhangkaiming/miniconda3/lib/python3.9/site-packages/transformers/token │
+│ ization_utils.py:517 in tokenize                                             │
+│                                                                              │
+│   514 │   │   │   text = re.sub(pattern, lambda m: m.groups()[0] or m.groups │
+│   515 │   │                                                                  │
+│   516 │   │   no_split_token = set(self.unique_no_split_tokens)              │
+│ ❱ 517 │   │   tokens = self.tokens_trie.split(text)                          │
+│   518 │   │   # ["This is something", "<special_token_1>", "  else"]         │
+│   519 │   │   for i, token in enumerate(tokens):                             │
+│   520 │   │   │   if token in no_split_token:                                │
+│                                                                              │
+│ /home/zhangkaiming/miniconda3/lib/python3.9/site-packages/transformers/token │
+│ ization_utils.py:135 in split                                                │
+│                                                                              │
+│   132 │   │   # for loop                                                     │
+│   133 │   │   skip = 0                                                       │
+│   134 │   │   # Main loop, Giving this algorithm O(n) complexity             │
+│ ❱ 135 │   │   for current, current_char in enumerate(text):                  │
+│   136 │   │   │   if skip and current < skip:                                │
+│   137 │   │   │   │   # Prevents the lookahead for matching twice            │
+│   138 │   │   │   │   # like extra_id_100 and id_100                         │
+╰──────────────────────────────────────────────────────────────────────────────╯
+TypeError: 'float' object is not iterable
+  1%|          | 16/1602 [38:32<63:40:42, 144.54s/it]
+[2023-07-21 12:37:02,506] [INFO] [launch.py:428:sigkill_handler] Killing subprocess 1692353
+[2023-07-21 12:37:02,508] [INFO] [launch.py:428:sigkill_handler] Killing subprocess 1692354
+[2023-07-21 12:37:03,574] [INFO] [launch.py:428:sigkill_handler] Killing subprocess 1692355
+[2023-07-21 12:37:04,573] [INFO] [launch.py:428:sigkill_handler] Killing subprocess 1692387
+[2023-07-21 12:37:05,572] [INFO] [launch.py:428:sigkill_handler] Killing subprocess 1692420
+[2023-07-21 12:37:06,635] [INFO] [launch.py:428:sigkill_handler] Killing subprocess 1692484
+[2023-07-21 12:37:08,167] [ERROR] [launch.py:434:sigkill_handler] ['/home/zhangkaiming/miniconda3/bin/python', '-u', 'finetune_freeze.py', '--local_rank=5', '--train_path', '/home/zhangkaiming/datasets/patent/patent_train.json', '--max_len', '5100', '--max_input_len', '4100', '--model_name_or_path', '/data9/NFS/patent/model_hub/chatglm-6b', '--tokenizer_name', '/data9/NFS/patent/model_hub/chatglm-6b', '--lora_rank', '8', '--per_device_train_batch_size', '2', '--gradient_accumulation_steps', '16', '--num_train_epochs', '3', '--save_steps', '100', '--learning_rate', '1e-5', '--fp16', '--remove_unused_columns', 'false', '--logging_steps', '50', '--output_dir', './output_freeze', '--deepspeed', './ds_config.json'] exits with return code = 1
